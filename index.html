@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Escarlata</title>
+    <link rel="icon" href="https://www.americadecali.com/cdn/shop/files/logo-05.png?v=1714675473&width=1000">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="encabezado">
+            <img src="https://www.americadecali.com/cdn/shop/files/logo-05_0dc22c0f-05ad-4774-b78e-d47922c5d864.png?format=jpg&v=1717606020&width=1200" class="escudo">
+            <h1>QUIZ ESCARLATA</h1>
+            <p>LA PASIÓN NO SE EXPLICA, SE DEMUESTRA</p>
+        </div>
+
+        <!-- Pantalla de inicio -->
+        <div class="inicio" id="inicio">
+
+            <h2>¿Cuánto sabes del América?</h2>
+
+            <p>Demuestra cuánto conoces sobre la historia del equipo y su hinchada.</p>
+
+            <div class="detalles">
+                <p>10 preguntas</p>
+                <p>60 segundos por pregunta</p>
+                <p>Historia y Barón Rojo Sur</p>
+            </div>
+
+            <button id="iniciar">Comenzar concurso</button>
+
+        </div>
+
+        <!-- Pantalla de preguntas -->
+        <div class="concurso" id="concurso">
+
+            <div class="informacion">
+                <p id="numeroPregunta">Pregunta 1 de 10</p>
+                <p id="puntaje">Puntaje: 0</p>
+            </div>
+
+            <div class="tiempo">
+                <p>TIEMPO RESTANTE</p>
+                <span id="temporizador">60</span>
+            </div>
+
+            <div class="tarjeta">
+
+                <h2 id="pregunta">Pregunta</h2>
+
+                <div class="respuestas" id="respuestas">
+
+                </div>
+
+                <p id="mensaje"></p>
+
+                <button id="siguiente" disabled>Siguiente</button>
+
+            </div>
+
+        </div>
+
+        <!-- Pantalla de resultados -->
+        <div class="final" id="final">
+
+            <h2>FINAL DEL CONCURSO</h2>
+
+            <p id="resultadoFinal"></p>
+
+            <div id="listaResultados">
+
+            </div>
+
+            <button id="reiniciar">Volver a jugar</button>
+
+        </div>
+
+        <footer>
+            © JN-GP 2026 | SIEMPRE ESCARLATA
+        </footer>
+
+    </div>
+
+</body>
+</html>

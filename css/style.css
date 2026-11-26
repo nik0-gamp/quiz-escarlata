@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+     background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/semana/XVFI6FFGI5BL5KWB6XOFIYB3GQ.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.container {
+    width: 550px;
+    padding: 35px;
+    background: linear-gradient(135deg, #151515, #240609);
+    border: 1px solid #a30b1c;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 30px #9b071b55;
+}
+
+.encabezado {
+    margin-bottom: 30px;
+}
+
+.escudo {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #ed1c35;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    color: #cccccc;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.detalles {
+    margin: 25px 0;
+    padding: 15px;
+    background: #0b0b0b;
+    border-radius: 10px;
+    border-left: 3px solid #ed1c35;
+}
+
+.detalles p {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #d20b28;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background: #ff243e;
+}
+
+button:disabled {
+    background: #555555;
+    color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.concurso {
+    display: none;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.tiempo {
+    margin-bottom: 20px;
+    color: #ed1c35;
+}
+
+.tiempo p {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.tiempo span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.tarjeta {
+    padding: 25px;
+    background: #090909;
+    border: 1px solid #650b18;
+    border-radius: 12px;
+}
+
+.tarjeta h2 {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.respuestas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.respuestas button {
+    background: #242424;
+    color: white;
+    border: 1px solid #8b1424;
+    text-align: left;
+}
+
+.respuestas button:hover:not(:disabled) {
+    background: #650b18;
+}
+
+.respuestas button.correcta {
+    background: #16803c;
+    border: 1px solid #20c55a;
+}
+
+.respuestas button.incorrecta {
+    background: #991b1b;
+    border: 1px solid #ef4444;
+}
+
+#mensaje {
+    margin: 20px 0;
+    font-weight: bold;
+    color: white;
+}
+
+#siguiente {
+    margin-top: 10px;
+}
+
+.final {
+    display: none;
+}
+
+.final h2 {
+    color: #ed1c35;
+}
+
+#resultadoFinal {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.resultadoPregunta {
+    padding: 13px;
+    margin-bottom: 10px;
+    background: #090909;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#reiniciar {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    color: #888888;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .informacion {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
